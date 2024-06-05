@@ -1,0 +1,42 @@
+body {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 30px;
+    box-shadow: 0px 10px 10px black,
+        0px -5px 5px rgb(114, 51, 51) inset;
+    animation: loading 2S infinite;
+
+}
+
+.load .two {
+    animation-delay: .2s;
+}
+
+.load .three {
+    animation-delay: .4s;
+}
+
+
+@keyframes loading {
+    50% {
+        transform: translateY(-150px) scale(.9, 1.1);
+        box-shadow: 0px 150px 50px black,
+            0px -5px 5px rgb(114, 51, 51) inset;
+    }
+}
